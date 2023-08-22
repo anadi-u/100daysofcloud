@@ -2,28 +2,16 @@
   <img src="banner.png">
 </p>
 
-## The Challenge
-1. Read about the challenge and register at [#100DaysOfCloud.com](https://100DaysOfCloud.com)
-2. Join the [Discord Channel](https://discord.gg/c6Db8nY)
-3. Copy the [100DaysOfCloud/100DaysOfCloud Journey Template](https://github.com/100DaysOfCloud/100DaysOfCloud/generate)
-4. Use the [Micro](Templates/000-DAY-ARTICLE-MICRO-TEMPLATE.md), [Short](Templates/001-DAY-ARTICLE-SHORT-TEMPLATE.md) or [Long](Templates/002-DAY-ARTICLE-LONG-TEMPLATE.md) Day Journey Template and document your day-to-day progress.
-5. Update your main README to link back to your Day Journey article
-4. If you need ideas go to [#100DaysOfCloudIdeas](https://github.com/100DaysOfCloud/100DaysOfCloudIdeas)
+## Anadi's Cloud Journey
 
-## How to use this template:
-Fill in your details where you see this icon ✍️
-We have provided a sample Day Journey entry staring at 0. You can delete this example.
+Hello, my name is Anadi and I want to learn new skills and explore the field of cloud computing.
 
-## [✍️ Your Name]'s Cloud Journey
+I have started this challenge to get more hands-on exerperience on cloud services on a daily basis and document the same.  
 
-[✍️ Introduce yourself]
+I have recently completed my AZ 104 certification and by the end of this journey, I would want to polish my skills and would like to go for other cloud certifications.
 
-[✍️ Tell us why you started this challenge]
 
-[✍️ Tell us where you want to be at the end of the challenge]
-
-- [✍️ Link to your Twitter](https://twitter.com/username)
-- [✍️ Link to your LinkedIn](https://www.linkedin.com/in/username)
+[LinkedIn](https://www.linkedin.com/in/anadi-uniyal-a59389191/)
 
 ## Stepping out the door
 
