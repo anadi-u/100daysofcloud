@@ -1,52 +1,31 @@
+<!-- This template removes the micro tutorial for a quicker post and removes images for a full template check out the 000-DAY-ARTICLE-LONG-TEMPLATE.MD-->
+
 **Add a cover photo like:**
 ![placeholder image](https://via.placeholder.com/1200x600)
 
-# New post title here
+# Planing Azure VNets
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+[2/100] I kicked off the challenge with planning Azure VNets. This is a very good project suggested by @madebygps (Project name: NET01-AZ200 — Plan virtual networks) to get hands on experience on Vnets and subnetting.
+Azure VNet, just like a traditional network in a Datacenter, is representation of your own network in the cloud.
 
-## Prerequisite
+## Steps Taken
+- Created a VNet with IP address space: 10.0.0.0/27
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- Address range: 10.0.0.0 - 10.0.0.31
 
-## Use Case
+- Address count: 32
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+- Created two subnets; subA(10.0.0.0/28) and subB(10.0.0.16/28)
 
 ## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+- Azure reserves the first four and last IP address for a total of 5 IP addresses within each subnet.
+  The first and last IP in each subnet is reserved for the network identification and for broadcast, respectively. 
+  Azure also holds 3 additional addresses for internal use starting from the first address in the subnet.
+- /27 is known as CIDR notation (Classless Inter domain routing). This represents an IP address and a suffix that indicates network identifier bits in a specified    format
+- If you plan to deploy some Azure service resources into a virtual network, they may require, or create, their own subnet, so there must be enough unallocated       space for them to do so.
 
 ## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
 
 [link](link)
