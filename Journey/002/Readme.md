@@ -1,6 +1,6 @@
 <!-- This template removes the micro tutorial for a quicker post and removes images for a full template check out the 000-DAY-ARTICLE-LONG-TEMPLATE.MD-->
 
-# Planing Azure VNets
+# Day 2 : Planing Azure VNets
 
 ## Introduction
 
