@@ -25,4 +25,4 @@ Azure VNet, just like a traditional network in a Datacenter, is representation o
 
 ## Social Proof
 
-[link](link)
+[Linkedin](https://www.linkedin.com/posts/anadi-uniyal-a59389191_2100-started-this-challenge-working-on-activity-7100458971467030528-1dfQ?utm_source=share&utm_medium=member_desktop)
