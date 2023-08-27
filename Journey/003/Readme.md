@@ -1,11 +1,11 @@
 **Add a cover photo like:**
 ![placeholder image](https://via.placeholder.com/1200x600)
 
-# New post title here
+# Infrastructure as code
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Infrastructure as code enables you to describe the infrastructure and configuration you want to deploy to the cloud through code. With IaC, application code and templates can be maintained together in a central code repository
 
 ## Prerequisite
 
