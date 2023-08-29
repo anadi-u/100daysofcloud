@@ -1,25 +1,44 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
 # Infrastructure as code
 
 ## Introduction
 
-Infrastructure as code enables you to describe the infrastructure and configuration you want to deploy to the cloud through code. With IaC, application code and templates can be maintained together in a central code repository
+Infrastructure as code enables you to describe the infrastructure and configuration you want to deploy to the cloud through code. With IaC, application code and templates can be maintained together in a central code repository. I worked on ARM and Azure Bicep templates to deploy resources in Azure.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+JSON, Visual Studio Code, Azure CLI
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+ARM (Azure Resource Manager) templates define the infrastructure and config for your deployment using JSON. 
+It follows decalrative syntax. Declarative syntax is a way of building strcuture and elements without the use of progrmmaing commands to create it.
+ARM templates are idempotent, which means you can deploy the same templte multiple times and get the same types of resources in th same state.
+A regular ARM template will have the following elements:
+
+-schema: 
+Required section that defines the location of the JSON schema file that describes the strcutre of JSON data.
+
+-content version:
+Section defines the version of the template
+
+-resources:
+Defines the actual items or resources you want to deploy or update in a resource group or subscription
+
+You can deploy an ARM template via these ways:
+1. Deploying the template locally
+2. Deploy using a linked template
+3. Deploy in Continous Deployment pipeline
+
+You can edit the ARM template using a code editor like Visual Studio code. The template can be deployed from Visual Studio code itself, but you have to login to the required Azure account.
+
+Command required to deploy ARM templates:
+az deployment group create \
+--name <Name of the template>
+--group <Resource group you want to deploy to>
+--template-file <template file used>
+
+
+
 
 ## Try yourself
 
