@@ -37,35 +37,29 @@ az deployment group create \
 --group <Resource group you want to deploy to>
 --template-file <template file used>
 
+Bicep is an Azure native language used for deploying resources. Follows a simpler syntax than JSON based-templates. 
 
+How does Bicep exactly work?
+WHen you submit a Bicep template to deploy resources in Azure, it goes to the Azure Resource Manager. A tooling built into Bicpe converts the Bicep into JSON template. This process is known as transpilation. 
 
+Bicep has 2 main componenets:
+1. Parameters:
+   Lets you bring values inside the Bicep Template
+   When deploying the template, you will be asked to provide the values of the parameters defined.
+   To add a parameter, param <paramater name> <paramater type>
 
-## Try yourself
+2. Variables:
+   Defined and set within a template.
+   Can be used when you want to store information in one place and refer to it multiple times in the template.
+   To add a variable, var <variable name> <variable type>
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
+Type can be of different types like string, int, boolean, object, etc.
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+This exercise gave me some hands-on experience on deploying ARM and Bicep templates and use visual studio code.
+Lessons learnt:
+Bicep and ARM templates have different use case scenarios.
+While Bicep is easier and less verbose, it cannot be used in different cloud providers, as its an Azure Native language.
+ARM tmeplates being JSON based can be used in different cloud providers as well. Terraform is also used to deploy resources in different cloud providers.
 
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
