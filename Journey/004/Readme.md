@@ -1,25 +1,61 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
-
+# Deeper dive into Azure Bicep
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+To learn more about different concepts in writing an Azure Bicep template such as conditions, loops and modules
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Basic knowledge of ARM templates, Azure Bicep and how these two work in Azure for resource deployment
+Using Visual Studio Code for writing Bicep templates and use the same for deploying the required resources.
 
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- 'if' condition can be used in Azure Bicep. It resolves in a boolean value (Treu/False). If value is true, resource is deployed, if not, resource deployment does not take place. Example:
+
+  param deploystorageaccount bool
+
+  resource stAccount 'Microsoft.storage/storageAccounts@2021-09-01' = if(deploystroageaccount){
+      name: 'teddybearstorage'
+      location: resourceGroup().location
+      kind: 'StorageV2'
+  //...
+  }
+
+  In the above code, a storage account is only deployed if 'deploystorageaccount' is set to true. The if condition comes with the resource definition.
+
+  - If condition can also be used for use cases or options. Example:
+
+    param envName string
+    resource stAccount 'Micorsoft.storage/storageAccounts@2021-09-01' = if(envName=='Production) {
+    //...
+    }
+  
+  - Loops can used to deploy multiple identical resources together. Similar to loops used in programming languages like C++ and Python.
+  -  An example code:
+    param storageAccountNames array = [
+    'bulbasaur'
+    'charmander'
+    'squirtle'
+]
+resouce storageAccountResources 'Microsoft.storage/storageAccounts@2021-09-01' = [for storagAccountName in storageAccountNames:
+{
+    name: storageAccountName
+    location: resourceGroup().location
+    kind: 'storageV2'
+    sku:
+    {
+        name: 'Standard_LRS'
+ 
+    }
+}]
+
+- The above loop deploys three storage accounts at once following the loop conditions/iterations.  
+- For loop starts with a square bracket []
+- Similar to if condition, loop condition is also written along with the resource definition.
+- Count based loops can also be used in Azure Bicep via range function. Range(x,y) where x= starting value and y=Number of values you count.
+- Example range(3,4) = 3,4,5,6
+- 
 
 ## Try yourself
 
