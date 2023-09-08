@@ -11,7 +11,7 @@ Using Visual Studio Code for writing Bicep templates and use the same for deploy
 
 ## Cloud Research
 
-- 'if' condition can be used in Azure Bicep. It resolves in a boolean value (Treu/False). If value is true, resource is deployed, if not, resource deployment does not take place. Example:
+- 'if' condition can be used in Azure Bicep. It resolves in a boolean value (True/False). If value is true, resource is deployed, if not, resource deployment does not take place. Example:
 
 
 
@@ -22,8 +22,6 @@ Using Visual Studio Code for writing Bicep templates and use the same for deploy
   In the above code, a storage account is only deployed if 'deploystorageaccount' is set to true. The if condition comes with the resource definition.
 
   - If condition can also be used for use cases or options. Example:
-
-    param envName string
     resource stAccount 'Micorsoft.storage/storageAccounts@2021-09-01' = if(envName=='Production) {
     //...
     }
