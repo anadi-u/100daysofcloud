@@ -50,34 +50,13 @@ resouce storageAccountResources 'Microsoft.storage/storageAccounts@2021-09-01' =
 - Similar to if condition, loop condition is also written along with the resource definition.
 - Count based loops can also be used in Azure Bicep via range function. Range(x,y) where x= starting value and y=Number of values you count.
 - Example range(3,4) = 3,4,5,6
-- 
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
+- @desciption can be used to add comments in the Bice p template.
+- @secure is used to secure the private information such as usernames, passwords and secrets to show in the deployment history logs.
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+With this exercise, I was able to learn more about different concepts involved in creating a more versetalie Bicep template. 
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+Create more Bicep templates using more advanced concepts on Visual Studio Code.
