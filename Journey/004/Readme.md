@@ -13,12 +13,9 @@ Using Visual Studio Code for writing Bicep templates and use the same for deploy
 
 - 'if' condition can be used in Azure Bicep. It resolves in a boolean value (Treu/False). If value is true, resource is deployed, if not, resource deployment does not take place. Example:
 
-  param deploystorageaccount bool
+
 
   resource stAccount 'Microsoft.storage/storageAccounts@2021-09-01' = if(deploystroageaccount){
-      name: 'teddybearstorage'
-      location: resourceGroup().location
-      kind: 'StorageV2'
   //...
   }
 
