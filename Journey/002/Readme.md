@@ -4,8 +4,10 @@
 
 ## Introduction
 
-[2/100] I kicked off the challenge with planning Azure VNets. This is a very good project suggested by @madebygps **(Project name: NET01-AZ200 — Plan virtual networks)** to get hands on experience on Vnets and subnetting.
-Azure VNet, just like a traditional network in a Datacenter, is representation of your own network in the cloud.
+[2/100] I kicked off the challenge with planning Azure VNets. 
+- This is a very good project suggested by @madebygps **(Project name: NET01-AZ200 — Plan virtual networks)** to get hands on experience on Vnets and subnetting.
+- Azure VNet, just like a traditional network in a Datacenter, is representation of your own network in the cloud.
+- Just like a network, Azure Vnet also supports subnets for proper network planning and security.
 
 ## Steps Taken
 
