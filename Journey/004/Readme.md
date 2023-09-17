@@ -3,13 +3,13 @@
 ## Introduction
 To learn more about different concepts in writing an Azure Bicep template such as conditions, loops and modules
 
-## Prerequisite
-Basic knowledge of ARM templates, Azure Bicep and how these two work in Azure for resource deployment
-Using Visual Studio Code for writing Bicep templates and use the same for deploying the required resources.
+## Prerequisites
+- Basic knowledge of ARM templates, Azure Bicep and how these two work in Azure for resource deployment.
+- Using Visual Studio Code for writing Bicep templates and use the same for deploying the required resources.
 
 
 ## Cloud Research
-- `if` condition can be used in Azure Bicep. It resolves in a boolean value (True/False).
+- `if` condition can be used in Azure Bicep. It resolves in a boolean value **(True/False)**.
 -  If value is true, resource is deployed, if not, resource deployment does not take place. Example:
 
 
@@ -49,13 +49,14 @@ resouce storageAccountResources 'Microsoft.storage/storageAccounts@2021-09-01' =
 }]
   ```
 
-- The above loop deploys three storage accounts at once following the loop conditions/iterations.  
-- For loop starts with a square bracket []
+> The above loop deploys three storage accounts at once following the loop conditions/iterations.  
+
+- For loop starts with a square bracket `[]`
 - Similar to if condition, loop condition is also written along with the resource definition.
-- Count based loops can also be used in Azure Bicep via range function. Range(x,y) where x= starting value and y=Number of values you count.
+- Count based loops can also be used in Azure Bicep via range function. *Range(x,y) where x= starting value and y=Number of values you count*.
 - Example range(3,4) = 3,4,5,6
-- @desciption can be used to add comments in the Bice p template.
-- @secure is used to secure the private information such as usernames, passwords and secrets to show in the deployment history logs.
+- `@desciption` can be used to add comments in the Bicep template.
+- `@secure` is used to secure the private information such as usernames, passwords and secrets to show in the deployment history logs.
 
 ## ☁️ Cloud Outcome
 
