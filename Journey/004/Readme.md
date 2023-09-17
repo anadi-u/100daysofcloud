@@ -1,33 +1,36 @@
-# Deeper dive into Azure Bicep
-## Introduction
+# Day 4: Deeper dive into Azure Bicep
 
+## Introduction
 To learn more about different concepts in writing an Azure Bicep template such as conditions, loops and modules
 
 ## Prerequisite
-
 Basic knowledge of ARM templates, Azure Bicep and how these two work in Azure for resource deployment
 Using Visual Studio Code for writing Bicep templates and use the same for deploying the required resources.
 
 
 ## Cloud Research
+- `if` condition can be used in Azure Bicep. It resolves in a boolean value (True/False).
+-  If value is true, resource is deployed, if not, resource deployment does not take place. Example:
 
-- 'if' condition can be used in Azure Bicep. It resolves in a boolean value (True/False). If value is true, resource is deployed, if not, resource deployment does not take place. Example:
 
-
-
+```
   resource stAccount 'Microsoft.storage/storageAccounts@2021-09-01' = if(deploystroageaccount){
   //...
   }
+```
 
-  In the above code, a storage account is only deployed if 'deploystorageaccount' is set to true. The if condition comes with the resource definition.
+> In the above code, a storage account is only deployed if 'deploystorageaccount' is set to true. The 'if' condition comes with the resource definition.
 
   - If condition can also be used for use cases or options. Example:
+    ```
     resource stAccount 'Micorsoft.storage/storageAccounts@2021-09-01' = if(envName=='Production) {
     //...
     }
-  
+    ```
+    
   - Loops can used to deploy multiple identical resources together. Similar to loops used in programming languages like C++ and Python.
-  -  An example code:
+  - An example code:
+```
     param storageAccountNames array = [
     'bulbasaur'
     'charmander'
@@ -44,6 +47,7 @@ resouce storageAccountResources 'Microsoft.storage/storageAccounts@2021-09-01' =
  
     }
 }]
+  ```
 
 - The above loop deploys three storage accounts at once following the loop conditions/iterations.  
 - For loop starts with a square bracket []
