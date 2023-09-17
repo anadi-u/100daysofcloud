@@ -1,4 +1,4 @@
-# Day 4: Deeper dive into Azure Bicep
+# Day 4: Deeper dive into Azure Bicep 🦾
 
 ## Introduction
 To learn more about different concepts in writing an Azure Bicep template such as conditions, loops and modules
