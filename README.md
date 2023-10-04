@@ -6,10 +6,12 @@
 
 Hello, my name is Anadi and I want to learn new skills and explore the field of cloud computing.
 
-I have started this challenge to get more hands-on experience on cloud services on a daily basis and document the same.  
+I have started this challenge to get more hands-on experience on cloud services and document my progress.  
 
-I have recently completed my AZ 104 certification and by the end of this journey, I would want to polish my skills and would like to go for other cloud certifications.
-
+Certifications completed:
+- AZ 900: Microsoft Azure Fundamentals
+- AZ 104: Microsoft Azure Administrator
+- Oracle cloud infrastructure foundations associate 
 
 [LinkedIn](https://www.linkedin.com/in/anadi-uniyal-a59389191/)
 
